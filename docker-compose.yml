@@ -1,0 +1,17 @@
+services:
+  truth-learning:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_CHAT_MODEL: ${OPENAI_CHAT_MODEL:-gpt-5-mini}
+    volumes:
+      - truth_learning_data:/app/data
+      - truth_learning_uploads:/app/uploads
+    restart: unless-stopped
+
+volumes:
+  truth_learning_data:
+  truth_learning_uploads:
+

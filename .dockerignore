@@ -1,0 +1,7 @@
+.git
+build
+data
+uploads
+.env
+*.log
+

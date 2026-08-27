@@ -1,0 +1,14 @@
+/build/
+/.cache/
+/.env
+/data/*.db
+/data/*.db-*
+/uploads/*
+!/uploads/.gitkeep
+!/data/.gitkeep
+*.log
+*.exe
+*.dll
+.DS_Store
+Thumbs.db
+
